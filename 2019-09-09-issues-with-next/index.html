@@ -146,21 +146,18 @@
     
         <h1 id="安装Jekyll-Next-theme主题时候的问题"><a href="#安装Jekyll-Next-theme主题时候的问题" class="headerlink" title="安装Jekyll Next theme主题时候的问题"></a>安装Jekyll Next theme主题时候的问题</h1><p><a href="http://theme-next.simpleyyt.com/" target="_blank" rel="noopener">主题链接</a></p>
 <a id="more"></a>
+
+
 <p>执行bundle exec jekyll server的时候会出现这个</p>
 <p><img src="https://i.imgur.com/Htod9s2.png" alt="1"></p>
 <h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>删掉Gemfile.lock</p>
 <p><img src="https://i.imgur.com/YN0sN8n.png" alt="2"></p>
 <p>warning信息还在，但是能运行了</p>
-<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><p>Gemfile.lock后面的</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">PLATFORMS</span><br><span class="line">  ruby</span><br><span class="line">  x64-mingw32</span><br><span class="line"></span><br><span class="line">DEPENDENCIES</span><br><span class="line">  github-pages</span><br><span class="line"></span><br><span class="line">BUNDLED WITH</span><br><span class="line">   1.17.1</span><br></pre></td></tr></table></figure>
-
-<p>应该安装</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gem install bundler -v &apos;1.17.1&apos;</span><br></pre></td></tr></table></figure>
-
+<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><p>Gemfile.lock后面的<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">PLATFORMS</span><br><span class="line">  ruby</span><br><span class="line">  x64-mingw32</span><br><span class="line"></span><br><span class="line">DEPENDENCIES</span><br><span class="line">  github-pages</span><br><span class="line"></span><br><span class="line">BUNDLED WITH</span><br><span class="line">   1.17.1</span><br></pre></td></tr></table></figure></p>
+<p>应该安装<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gem install bundler -v &apos;1.17.1&apos;</span><br></pre></td></tr></table></figure></p>
 <p>然后删掉.git</p>
 <p>还要在_config.yml 文件末尾添加以下代码：</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 仓库名自定</span><br><span class="line">repository: watchcat2k/jekyll-theme-next</span><br></pre></td></tr></table></figure>
-
+<p><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 仓库名自定</span><br><span class="line">repository: watchcat2k/jekyll-theme-next</span><br></pre></td></tr></table></figure></p>
 <p><a href="https://blog.csdn.net/qq_36272282/article/details/90518387" target="_blank" rel="noopener">教程来源</a></p>
 <h2 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h2><p>Ruby真难用</p>
 
