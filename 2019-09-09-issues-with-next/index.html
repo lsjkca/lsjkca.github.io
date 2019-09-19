@@ -2,13 +2,13 @@
 <html class="has-navbar-fixed-top">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>分类: 技术记录 - TinyoneStudio</title>
+<title>issues when installing Jekyll Next theme - TinyoneStudio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
 
 
-<link href="/categories/技术记录/index.html" rel="alternate" hreflang="en">
+<link href="/zh-cn/2019-09-09-issues-with-next/" rel="alternate" hreflang="zh-CN">
     
 
 
@@ -16,13 +16,20 @@
 
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="TinyoneStudio">
-<meta property="og:url" content="http://lsjkca.github.io/zh-cn/categories/技术记录/index.html">
+    <meta name="description" content="安装Jekyll Next theme主题时候的问题主题链接">
+<meta property="og:type" content="article">
+<meta property="og:title" content="issues when installing Jekyll Next theme">
+<meta property="og:url" content="http://lsjkca.github.io/2019-09-09-issues-with-next/index.html">
 <meta property="og:site_name" content="TinyoneStudio">
-<meta property="og:locale" content="zh-cn">
+<meta property="og:description" content="安装Jekyll Next theme主题时候的问题主题链接">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://i.imgur.com/Htod9s2.png">
+<meta property="og:image" content="https://i.imgur.com/YN0sN8n.png">
+<meta property="og:updated_time" content="2019-09-19T13:29:27.234Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TinyoneStudio">
+<meta name="twitter:title" content="issues when installing Jekyll Next theme">
+<meta name="twitter:description" content="安装Jekyll Next theme主题时候的问题主题链接">
+<meta name="twitter:image" content="https://i.imgur.com/Htod9s2.png">
 
 
 
@@ -66,7 +73,7 @@
 <nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
-            <a class="navbar-item navbar-logo" href="/zh-cn">
+            <a class="navbar-item navbar-logo" href="/">
                 
                 <img src="/images/logo.png" alt height="28">
                 
@@ -80,19 +87,19 @@
         
         <div class="navbar-menu navbar-start">
             
-            <a class="navbar-item " href="/zh-cn/archives">归档</a>
+            <a class="navbar-item " href="/archives">Archives</a>
             
-            <a class="navbar-item " href="/zh-cn/categories">分类</a>
+            <a class="navbar-item " href="/categories">categories</a>
             
-            <a class="navbar-item " href="/zh-cn/tags">标签</a>
+            <a class="navbar-item " href="/tags">tags</a>
             
-            <a class="navbar-item " href="/zh-cn/about">关于</a>
+            <a class="navbar-item " href="/about">about</a>
             
         </div>
         
         <div class="navbar-menu navbar-end">
             
-            <a class="navbar-item search" title="搜索" href="javascript:;">
+            <a class="navbar-item search" title="Search" href="javascript:;">
                 <i class="fas fa-search"></i>
             </a>
             
@@ -109,57 +116,89 @@
     </div>
 </nav>
 
-    <section class="section section-heading">
+    <section class="section">
     <div class="container">
-        <div class="content">
-            <h5><i class="far fa-folder"></i>技术记录</h5>
-        </div>
-    </div>
-</section>
-<section class="section">
-    <div class="container">
-    
-        <article class="article content gallery" itemscope itemprop="blogPost">
+    <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            <a href="/zh-cn/2019-09-09-issues-with-next/" itemprop="url">安装Jekyll Next theme主题时候的问题</a>
+            issues when installing Jekyll Next theme
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
         <span class="column is-narrow">
-            <time datetime="2019-09-08T14:00:00.000Z" itemprop="datePublished">9月 9 2019</time>
+            <time datetime="2019-09-08T14:00:00.000Z" itemprop="datePublished">Sep 9 2019</time>
         </span>
         
         <span class="column is-narrow article-category">
             <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/zh-cn/categories/技术记录/">技术记录</a>
+            <a class="article-category-link" href="/categories/TechIssues/">TechIssues</a>
         </span>
         
         
         <span class="column is-narrow">
             
             
-            1 分钟 读完 (约 144 字)
+            a minute read (About 144 words)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
         <h1 id="安装Jekyll-Next-theme主题时候的问题"><a href="#安装Jekyll-Next-theme主题时候的问题" class="headerlink" title="安装Jekyll Next theme主题时候的问题"></a>安装Jekyll Next theme主题时候的问题</h1><p><a href="http://theme-next.simpleyyt.com/" target="_blank" rel="noopener">主题链接</a></p>
-        <p class="article-more-link">
-            <a href="/zh-cn/2019-09-09-issues-with-next/#more">阅读更多</a>
-        </p>
+<a id="more"></a>
+<p>执行bundle exec jekyll server的时候会出现这个</p>
+<p><img src="https://i.imgur.com/Htod9s2.png" alt="1"></p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>删掉Gemfile.lock</p>
+<p><img src="https://i.imgur.com/YN0sN8n.png" alt="2"></p>
+<p>warning信息还在，但是能运行了</p>
+<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><p>Gemfile.lock后面的</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">PLATFORMS</span><br><span class="line">  ruby</span><br><span class="line">  x64-mingw32</span><br><span class="line"></span><br><span class="line">DEPENDENCIES</span><br><span class="line">  github-pages</span><br><span class="line"></span><br><span class="line">BUNDLED WITH</span><br><span class="line">   1.17.1</span><br></pre></td></tr></table></figure>
+
+<p>应该安装</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gem install bundler -v &apos;1.17.1&apos;</span><br></pre></td></tr></table></figure>
+
+<p>然后删掉.git</p>
+<p>还要在_config.yml 文件末尾添加以下代码：</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 仓库名自定</span><br><span class="line">repository: watchcat2k/jekyll-theme-next</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://blog.csdn.net/qq_36272282/article/details/90518387" target="_blank" rel="noopener">教程来源</a></p>
+<h2 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h2><p>Ruby真难用</p>
+
     
     </div>
     
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/2019-09-08-optus_5G/">Optus 5G unlimited boardband</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/2019-09-08-Up/">Up Bank</a>
+            
+        </span>
+    </div>
     
 </article>
 
 
 
 
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
     
+<div id="disqus_thread">
     
+    <div class="notification is-danger">
+        You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.
+    </div>
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+
     </div>
 </section>
     <footer class="footer">
@@ -193,7 +232,7 @@
                 <span class="icon">
                     <i class="fas fa-globe"></i>
                 </span>
-                <span>简体中文</span>
+                <span>English</span>
                 <span class="icon is-small">
             <i class="fas fa-angle-down" aria-hidden="true"></i>
           </span>
@@ -202,11 +241,11 @@
         <div class="dropdown-menu has-text-left" role="menu" style="top:100%">
             <div class="dropdown-content">
             
-                <a href="/categories/技术记录/index.html" class="dropdown-item">
+                <a href="/2019-09-09-issues-with-next/" class="dropdown-item">
                     English
                 </a>
             
-                <a href="/zh-cn/categories/技术记录/index.html" class="dropdown-item">
+                <a href="/zh-cn/2019-09-09-issues-with-next/" class="dropdown-item">
                     简体中文
                 </a>
             
@@ -243,7 +282,7 @@
     window.FontAwesomeConfig = {
         searchPseudoElements: true
     }
-    moment.locale("zh-CN");
+    moment.locale("en-AU");
 </script>
 
 
@@ -367,7 +406,7 @@
     <div class="searchbox-mask"></div>
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="站内搜索">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -379,13 +418,13 @@
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: '文章',
-                PAGES: '页面',
-                CATEGORIES: '分类',
-                TAGS: '标签',
-                UNTITLED: '(无标题)',
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
             },
-            CONTENT_URL: '/content.zh-cn.json',
+            CONTENT_URL: '/content.json',
         };
         window.INSIGHT_CONFIG = INSIGHT_CONFIG;
     })(window);
